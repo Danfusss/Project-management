@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "lib": ["es6", "dom", "dom.iterable", "esnext"],
+    "baseUrl": "./src",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "alwaysStrict": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "assets/*": ["./assets/*"],
+      "components/*": ["./components/*"],
+      "config/*": ["./config/*"],
+      "graphql/*": ["./graphql/*"],
+      "hooks/*": ["./hooks/*"],
+      "locale/*": ["./locale/*"],
+      "models/*": ["./models/*"],
+      "pages/*": ["./pages/*"],
+      "store/*": ["./store/*"],
+      "utils/*": ["./utils/*"],
+      "mock/*": ["./mock/*"],
+      "interface/*": ["./models/interface"],
+      "@badeball/cypress-cucumber-preprocessor/*": [
+        "./node_modules/@badeball/cypress-cucumber-preprocessor/dist/subpath-entrypoints/*"
+      ]
+    },
+    "typeRoots": ["./node_modules/@types", "./src/types"]
+  },
+  "include": ["src/**/*", "tests/**/*", "build", "build", "cypress.config.ts"],
+  "exclude": ["node_modules", "src/build"]
+}
